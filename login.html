@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines character set and viewport settings for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title of the page displayed on the browser tab -->
+    <title>Checkout Page</title>
+</head>
+<body>
+
+    <!-- Main container for aligning content -->
+    <div class="container">
+    
+        <!-- Section for collecting shipping information -->
+        <div class="section">
+            <!-- Heading for the shipping information section -->
+            <h2>Shipping Information</h2>
+            <!-- Input fields for user to enter their shipping details -->
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="state" placeholder="State" required>
+            <input type="text" id="zip" placeholder="ZIP Code" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+        </div>
+        <!-- Section for the purchase completion button -->
+        <div class="section">
+            <!-- Button to submit the form and complete the purchase -->
+            <button id="complete-purchase">Complete Purchase</button>
+        </div>
+    </div>
+    <!-- Linking JavaScript file for page functionality -->
+    <script src="app.js"></script>
+</body>
+</html>

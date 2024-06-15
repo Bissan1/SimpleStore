@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Defines basic properties of the page such as character set and viewport -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Page title -->
+    <title>Market</title>
+    <!-- Linking CSS file for page styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking boxicons icons for use on the page -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar and title -->
+        <div class="title container">
+            <!-- Logo and link to homepage -->
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- Shopping bag icon -->
+            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+             <!-- Shopping cart content -->
+            <div class="cart">
+                <!-- Title of the shopping cart -->
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content that will be added inside the shopping cart -->
+                <div class="cart-contant"></div>
+                <!-- Total price of products in the shopping cart -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Button to complete the purchase -->
+                <button type="button" class="button-buy">Buy</button>
+                <!-- Icon to close the shopping cart -->
+                <i class='bx bx-x' id="cart-close"></i>
+                
+            </div>
+        </div>
+    </header>
+     <!-- Section for products offered for sale -->
+    <section class="shop-container">
+        <!-- Section title -->
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <!-- Box for each product containing an image, title, price, button for more details, and an icon to add the product to the shopping cart -->
+            <!-- This box is repeated for each product with varying content according to each product -->
+            <div class="products-box">
+                <img src="images/conseler.jpg" alt="" class="product-img">
+                <h2 class="product-title">Conseler</h2>
+                <span class="price">$75</span>
+                <a href="detals.html?product=conseler"><button type="button" class="button-detals1">More Details</button></a>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="products-box">
+                <img src="images/foundation.jpg" alt="" class="product-img">
+                <h2 class="product-title">Foundation</h2>
+                <span class="price">$100</span>
+                <a href="detals.html?product=foundation"><button type="button" class="button-detals2">More Details</button></a>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="products-box">
+                <img src="images/Parefume.jpg" alt="" class="product-img">
+                <h2 class="product-title">Perfume For Men</h2>
+                <span class="price">$50</span>
+                <a href="detals.html?product=perfume-men"><button type="button" class="button-detals3">More Details</button></a>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="products-box">
+                <img src="images/Perfume 2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Perfume For Women</h2>
+                <span class="price">$50</span>
+                <a href="detals.html?product=perfume-women"><button type="button" class="button-detals4">More Details</button></a>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="products-box">
+                <img src="images/skincare.jpg" alt="" class="product-img">
+                <h2 class="product-title">SkinCare</h2>
+                <span class="price">$120</span>
+                <a href="detals.html?product=skincare"><button type="button" class="button-detals5">More Details</button></a>
+                <i class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+        <!-- Linking JavaScript files to add interactivity to the page -->
+    <script src="app.js"></script>
+    <script src="detals.js"></script>
+
+
+</body>
+</html>
